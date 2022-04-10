@@ -18,18 +18,17 @@ public class Principal {
 
 		long diferenca = data.until(LocalDate.now(), ChronoUnit.DAYS);
 
-		System.out.println("Diferença, em dias, do dia de hoje: " + Math.abs(diferenca));
-		
+		System.out.println("DiferenÃ§a, em dias, do dia de hoje: " + Math.abs(diferenca));
+
 		String dataFormatada = DateTimeFormatter.ofPattern("dd/MM/yyyy").format(data.plusDays(110));
-		
+
 		System.out.println("Data somada 110 dias: " + dataFormatada);
-		
+
 		data = LocalDate.of(ano, 8, dia);
-		
+
 		String dataFormatada2 = DateTimeFormatter.ofPattern("dd/MMM/YYYY").format(data);
-		
+
 		System.out.println("Data formatada: " + dataFormatada2);
-		
 
 	}
 
