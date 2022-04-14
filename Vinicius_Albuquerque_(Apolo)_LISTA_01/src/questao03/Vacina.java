@@ -1,46 +1,46 @@
 package questao03;
 
 public class Vacina {
-	private int codigo;
-	private String nome;
-	private String lote;
+    private int codigo;
+    private String nome;
+    private String lote;
 
-	public Vacina(int codigo, String nome, String lote) {
-		if (nome.equals("CORONAVAC") | nome.equals("OXFORD")) {
-			this.codigo = codigo;
-			this.nome = nome;
-			this.lote = lote;
-		} else {
-			System.out.println("Não foi possível criar o objeto, nome da vacina inválido");
-		}
-	}
+    public Vacina(int codigo, String nome, String lote) {
+        if (nome.equals("CORONAVAC") | nome.equals("OXFORD")) {
+            this.codigo = codigo;
+            this.nome = nome;
+            this.lote = lote;
+        } else {
+            System.out.println("Nï¿½o foi possï¿½vel criar o objeto, nome da vacina invï¿½lido");
+        }
+    }
 
-	public int getCodigo() {
-		return codigo;
-	}
+    public int getCodigo() {
+        return codigo;
+    }
 
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public void setNome(String nome) {
-		if (nome.equals("CORONAVAC") | nome.equals("OXFORD")) {
-			this.nome = nome;
-		} else {
-			System.out.println("Não foi possível trocar o nome da vacina, nome inválido");
-		}
-	}
+    public void setNome(String nome) {
+        if (nome.equals("CORONAVAC") | nome.equals("OXFORD")) {
+            this.nome = nome;
+        } else {
+            System.out.println("Nï¿½o foi possï¿½vel trocar o nome da vacina, nome invï¿½lido");
+        }
+    }
 
-	public String getLote() {
-		return lote;
-	}
+    public String getLote() {
+        return lote;
+    }
 
-	public void setLote(String lote) {
-		this.lote = lote;
-	}
+    public void setLote(String lote) {
+        this.lote = lote;
+    }
 
 }

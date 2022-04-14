@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testefxintellij.HelloController">
+  <tabs>
+    <Tab text="Form Simples">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtFNome" layoutX="93.0" layoutY="28.0" />
+                  <TextField fx:id="txtFEndereco" layoutX="94.0" layoutY="66.0" />
+                  <TextField fx:id="txtFResumo" layoutX="94.0" layoutY="105.0" />
+                  <TextArea fx:id="txtADescricao" layoutX="95.0" layoutY="144.0" prefHeight="203.0" prefWidth="151.0" />
+                  <Label layoutX="29.0" layoutY="32.0" text="Nome" />
+                  <Label layoutX="31.0" layoutY="144.0" text="Descrição" />
+                  <Label layoutX="29.0" layoutY="70.0" text="Endereço" />
+                  <Label layoutX="31.0" layoutY="109.0" text="Resumo" />
+                  <Button fx:id="okButton" layoutX="430.0" layoutY="322.0" mnemonicParsing="false" onAction="#onOKButtonClick" text="OK" />
+                  <Button fx:id="cancelButton" layoutX="509.0" layoutY="322.0" mnemonicParsing="false" text="Cancel" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Aba com DatePicker">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <DatePicker fx:id="dtP1" layoutX="197.0" layoutY="124.0" />
+                  <DatePicker fx:id="dtP2" layoutX="198.0" layoutY="165.0" />
+                  <Button layoutX="234.0" layoutY="211.0" mnemonicParsing="false" onAction="#onPeriodoButtonClick" text="Período em dias" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
